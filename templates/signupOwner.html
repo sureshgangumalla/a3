@@ -34,15 +34,15 @@
 					<ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="name">Owner's Email:</label>
-							<input class="fs-anim-lower" id="owner_email" name="owner_email" type="email" ng-model="email" placeholder="xyz@abc.com"/>
+							<input class="fs-anim-lower" ng-required="true" id="owner_email" name="owner_email" type="email" ng-model="email" placeholder="xyz@abc.com"/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="password">Password:</label>
-							<input class="fs-anim-lower" id="owner_password" name="owner_password" type="password"/>
+							<input class="fs-anim-lower" ng-required="true" id="owner_password" name="owner_password" type="password"/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="cpassword">Confirm Password:</label>
-							<input class="fs-anim-lower" id="owner_cpassword" name="owner_cpassword" type="password"/>
+							<input class="fs-anim-lower" ng-required="true" id="owner_cpassword" name="owner_cpassword" type="password"/>
 						</li>
 					</ol><!-- /fs-fields -->
 					<button class="fs-submit" type="submit">Get Started</button>
