@@ -21,8 +21,8 @@ class Assign3Database:
 
     def data_connect(self, dict = False):
         try:
-            cnx = mysql.connector.connect(user='gangumalla', password='B00789128',
-                                          host='db.cs.dal.ca', database='gangumalla')
+            cnx = mysql.connector.connect(user='CSCI5308_16_DEVINT_USER', password='CSCI5308_16_DEVINT_16175',
+                                          host='db-5308.cs.dal.ca', database='CSCI5308_16_DEVINT')
 
         except mysql.connector.Error as e:
             print(e.errno)        # 2003
