@@ -1,0 +1,312 @@
+/*Tectum CSS*/
+@import url("normalize.css");
+/*Menu styles from Codrops*/
+
+@font-face {
+  font-family: Billabong;
+  src: url(../font/billabong.ttf);
+}
+@font-face {
+  font-family: csscript;
+  src: url(../font/cscript.ttf);
+}
+
+.app {
+    font-family: csscript;
+    top: 1em;
+    font-size: 12em;
+    text-align: center;
+}
+
+.tagline{
+      font-size: 2em;
+  font-family: Billabong;
+}
+
+.appbtn{ 
+   background-color: #343a40!important;
+    color: white;
+    font-size: 2em;
+    /* padding: 1em 2em 1em 2em; */
+    width: 8em;
+    height: 2.2em;
+    border: 0.1em solid #343a40!important;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: sans-serif;
+    border-radius :4px;
+}
+
+.app-subcontainer {
+  text-align: center;
+    padding-top: 8em;
+}
+.appbtn:hover {
+    color: #FFFFFF;
+}
+header{
+	padding:5%;
+	background-color: yellow;
+}
+.FeedbackPage {
+   text-align: center;
+    margin-top: 5em;
+}
+.feedback-comments,.Feedback-Smileys,.feedback-apartment input[type="text"] {
+    margin-top: 2em;
+}
+.submit-button {
+    padding: 10px 15px;
+    background-color: #000;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 2em;
+}
+.menu {
+	line-height: 1;
+	margin: 0 auto 3em;
+}
+.logo img{
+	width: 4em;
+}
+.navbar-nav .nav-link{
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+/*Custom rules for alignment*/
+.header_right {
+	display: inline-block;
+	float: right;
+	position: relative;
+	top: -1em;
+}
+.p1{
+	padding: 1em;
+}
+.p05{
+	padding: 0.5em;
+}
+.pr1{
+	padding-right: 1em;
+}
+.pt1{
+	padding-top: 1em;
+}
+.p4{
+	padding: 4em;
+}
+.pt3{
+	padding-top: 3em;
+}
+.emptyimage{
+	text-align: center;
+}
+.ptr{
+	cursor:pointer;
+}
+.vm{
+	vertical-align: middle;
+}
+.carousel-inner{
+  width:100%;
+  max-height: 20em !important;
+}
+.txtgray{
+	color: #BEBEBE;
+}
+
+.vm{
+	vertical-align: middle;
+}
+.errorclass{
+	color: red;
+}
+
+form.LoginForm {
+    text-align: center;
+}
+.Email input[type="text"], .Password input[type="password"] {
+font-family: sans-serif;
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em 1em;
+    border: 1px solid #D0D0D0;
+    border-radius: 0.2em;
+        margin-bottom: 1em;
+}
+
+h1.LoginHeader {
+    text-align: center;
+}
+.LoginFB,.LoginGoogle, .LoginTwitter {
+    background-color: #4267b2;
+    text-align: center;
+    display: inline;
+    padding: 2%;
+    color:#fff;
+    font-weight:700;
+    font-size:17px;
+    cursor:pointer;
+}
+.LoginTwitter {
+    background-color: #1da1f2;
+
+}
+.LoginGoogle {
+    background-color: #DD5144;
+}
+
+.LoginWithFacebook,.LoginWithGoogle, .LoginWithTwitter {
+    text-align: center;
+    margin-top:4em;
+}
+h2.emaillogin {
+    text-align: center;
+    margin-top: 2.8em;
+}
+.LoginButton input[type="submit"] {
+    padding: 11px 50px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+img.LoginPage{
+    width: 3em;
+}
+.column {
+    padding: 5px;
+    float: left;
+}
+.social-connect{
+    width: 3em;
+    border-radius: 15px;
+}
+.logincontainer .row{
+    text-align: center;
+}
+.loginbtn{ 
+background-color: #343a40!important;
+    color: white;
+    font-size: 1em;
+    width: 30%;
+    border: 0.1em solid #343a40!important;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: sans-serif;
+    padding: 10% border-radius;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+.button {
+     background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+.button:hover, .loginbtn:hover, .social-connect:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    border-radius: 4px;
+}
+
+/*
+	Bootstrap media query break points.
+*/
+@media screen and (min-device-width: 320px) { /*Single column Layout*/
+	.texttitle{
+		display: none;
+	}
+	.imagetitle{
+		display: inline-block;
+		width: 65%;
+	}
+	.locwidth{
+		width: 80%;
+	}
+	.adjwidth{
+		width:4em;
+	}
+	.locstyle{
+		width: 2.3em;
+		margin-top: 0.53em;
+	}
+	.profile-icons{
+		display: inline;
+		width: 22%;
+	}
+	.caf{
+		width: 15%;
+	}
+	.gen{
+		width: 10%;
+	}
+	.social-icons{
+		display: inline;
+		width: 15%;
+	}
+}
+@media only screen and (min-device-width: 576px) {
+	
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+	.texttitle{
+		display: inline-block;
+	}
+	.locwidth{
+		width: 25%;
+	}
+	.imagetitle{
+		display: none;
+		width: 2%;
+	}
+	.adjwidth{
+		width: auto;
+	}
+	.locstyle{
+		width: 7em;
+		margin-top: 0.4em;
+	}
+	.profile-icons{
+		display: inline;
+		width: 11%;
+	}
+	.caf{
+		width: 3%;
+	}
+	.gen{
+		width: 2%;
+	}
+	.social-icons{
+		display: inline;
+		width: 3%;
+	}
+}
+@media (min-width: 1200px) {
+
+}
+
+.smileys img {
+    width: 50px;
+    height: 50px;
+}
+
+

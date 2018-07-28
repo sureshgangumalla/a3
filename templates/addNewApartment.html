@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% include './headerOwner.html' %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fullscreen Form Interface</title>
+    <meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
+    <meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+    <meta name="author" content="Codrops" />
+    {#		<link rel="shortcut icon" href="../favicon.ico">#}
+    <link rel="stylesheet" type="text/css" href="../../static/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/cs-select.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/cs-skin-boxes.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/tectum.css" />
+    <script type="text/javascript" src="../../static/js/angular.min.js"></script>
+    <script type="text/javascript" src="../../static/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="../../static/js/tectum.js"></script>
+    <style>
+        .add-more-product-button{
+            margin-right: 40px;
+            padding: 5px 30px 5px 30px;
+            float: left;
+        }
+        .add_details_section{
+
+            width: 850px !important;
+            margin-left: 150px;
+
+
+        }
+        #banner_form, #appartment_form {
+
+            margin-left: 100px;
+        }
+        .product-submit-button{
+
+            margin-right: 40px;
+            padding: 5px 40px 5px 40px;
+            margin-left: 250px;
+        }
+
+    </style>
+
+    <title>Apartment List</title>
+</head>
+
+<body>
+
+
+
+
+<div class="MainPage">
+    <div class="apartment-details content-wrapper">
+        <div class="container">
+            <div class="tabs">
+
+                <div class="panel panel-default add_details_section">
+
+                    <div class="panel-heading">  <h4>Add Appartment</h4></div>
+                    <div class="panel-body">
+
+                        <form class="form-horizontal"  method="POST"  id="addApartment_form" name="addApartment_form" action="" autocomplete="off">
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Appartment Name:</label>
+                                <div class="col-lg-5">
+                                    <input type="text" name="apartment_Name" id="apartment_Name" class="form-control input-sm" placeholder="name">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label"> Location</label>
+                                <div class="col-lg-5">
+                                    <input type="text" name="apartment_Location" id="apartment_Location" class="form-control input-sm" placeholder="location">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Apartment Type:</label>
+                                <div class="col-lg-5">
+                                    <input type="text" name="apartment_Type" id="apartment_Type" class="form-control input-sm" placeholder="1BHK">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Owner Contact Number:</label>
+                                <div class="col-lg-5">
+                                    <input type="text" name="owner_Contact" id="owner_Contact" class="form-control input-sm" placeholder="Owner's Contact Number">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Apartment Description:</label>
+                                <div class="col-lg-5">
+                                    <textarea type="text" name="apartment_Description" id="apartment_Description" class="form-control input-sm" placeholder="Apartment Description" style="height:200px"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-lg-3 control-label">Appartment Image </label>
+                                <div class="col-lg-5">
+                                    <input type="file" name="image_URL" id="image_URL" class="form-control input-sm" placeholder="Image " accept="static/*" multiple>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <button value="save">Add Apartment</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

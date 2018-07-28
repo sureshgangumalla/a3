@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      {% include './headerOwner.html' %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fullscreen Form Interface</title>
+		<meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
+		<meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+		<meta name="author" content="Codrops" />
+{#		<link rel="shortcut icon" href="../favicon.ico">#}
+		<link rel="stylesheet" type="text/css" href="../../static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/cs-skin-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/tectum.css" />
+		<script type="text/javascript" src="../../static/js/angular.min.js"></script>
+		<script type="text/javascript" src="../../static/js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="../../static/js/tectum.js"></script>
+
+
+    <title>Add Apartment</title>
+</head>
+
+    <body>
+
+     <button type="button" onclick="window.location.href='{{ url_for( 'addApartment') }}';">Add Apartment</button>
+      <div class="MainPage">
+         <div class="apartment-details content-wrapper">
+            <div class="container">
+               <div class="tabs">
+                  <ul>
+                     <li class="parent-tabs active" onclick="switch_tabs(this,1)">Availability</li>
+                     <li class="parent-tabs" onclick="switch_tabs(this,2)">Ameneties</li>
+                     <li class="parent-tabs" onclick="switch_tabs(this,3)">Reviews</li>
+                  </ul>
+                  <div class="availability tabs-parent">
+                     <div class="tabs-child active availability-tabs-details">
+                        <div class="row">
+                           <div class="adjustment show-room">
+                              <div class="col-sm-3">
+                                 <div class="Unitnumber">
+                                    Unit number:410
+                                 </div>
+                                 <div class="shared">
+                                    Shared
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <img src="../../static/images/vishwa.jpg" alt="image" class="col-sm-4 col-xs-4 "/>
+                                 <img src="../../static/images/aman.jpg" alt="image" class="col-sm-4 col-xs-4"/>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="Details-apartment col-sm-3">
+                                    <div class="btn btn-outline-dark" onclick="book_now_click()">
+                                       Details
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="adjustment show-room">
+                              <div class="col-sm-3">
+                                 <div class="Unitnumber">
+                                    Unit number:410
+                                 </div>
+                                 <div class="shared">
+                                    Shared
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <img src="../../static/images/asok.jpg" alt="image" class="col-sm-4 col-xs-4 "/>
+                                 <img src="../../static/images/aman.jpg" alt="image" class="col-sm-4 col-xs-4"/>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="Details-apartment col-sm-3">
+                                    <div class="btn btn-outline-dark Details" onclick="book_now_click()">
+                                       Details
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="adjustment show-room free">
+                              <div class="col-sm-3">
+                                 <div class="Unitnumber">
+                                    Unit number:410
+                                 </div>
+                                 <div class="shared">
+                                    Free
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 &#160;
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="Details-apartment col-sm-3">
+                                    <div class="btn btn-outline-dark Book" onclick="new_booking()">
+                                       Book
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="adjustment show-room">
+                              <div class="col-sm-3">
+                                 <div class="Unitnumber">
+                                    Unit number:410
+                                 </div>
+                                 <div class="shared">
+                                    Shared
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <img src="../../static/images/aman.jpg" alt="image" class="col-sm-4 col-xs-4 "/>
+                                 <img src="../../static/images/shri.png" alt="image" class="col-sm-4 col-xs-4"/>
+                              </div>
+                              <div class="col-sm-3">
+                                 <div class="Details-apartment col-sm-3">
+                                    <div class="btn btn-outline-dark Details" onclick="book_now_click()">
+                                       Details
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="amenities tabs-parent">
+                     <div class="tabs-child  amenities-tabs-details">
+                        <div class="row">
+                           <div class="col-sm-8 amenetiees">
+                              <div class="parking">
+                                 <span>Car Park
+                                 </span>
+                                 <span>
+                                 Paid
+                                 </span>
+                              </div>
+                              <div class="heater">
+                                 <span>Heater
+                                 </span>
+                                 <span>
+                                 24 hrs
+                                 </span>
+                              </div>
+                              <div class="gym">
+                                 <span>Gym
+                                 </span>
+                                 <span>
+                                 Yes
+                                 </span>
+                              </div>
+                           </div>
+                           <div class="col-sm-4">
+                              <div class="Book-apartment-details">
+                                 <div class="btn btn-outline-dark">
+                                    Details
+                                 </div>
+                              </div>
+                              <div class="Book-apartment">
+                                 <div class="btn btn-outline-dark">
+                                    Book
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="reviews tabs-parent">
+                     <div class="tabs-child reviews-tabs-details">
+                        <div class="overallreating">
+                           <span>Overall Rating</span><span class="rating"> 3.4</span>
+                        </div>
+                        <div class="Recentratings">
+                           <img src="../../static/images/shri.png"alt="profile_pic"/>
+                           <span>
+                           No bed bugs! Some relief finally.
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="quick-view-details" style="padding: 0;">
+         <div class="BookaPartment bg-dark" style="color: white;text-align: initial;">
+               Apartment Details
+            </div>
+            <div class="close-quickview p05" style="color: white;">×</div>
+
+         <div class="p1">
+            <div class="row">
+               <div class="friends adjustment">
+                <div class="friend1 col-sm-6">
+                  <img src="../../static/images/aman.jpg"/>
+                  <div>Aman Nagpal</div>
+                 </div>
+                 <div class="friend2 col-sm-6">
+                  <img src="../../static/images/vishwa.jpg"/>
+                  <div>Bahubali-4</div>
+                 </div>
+               </div>
+            </div>
+            <div class="cost">
+               Cost: CAD 320
+            </div>
+         <div class="row requext-button">
+            <div class="btn btn-outline-dark">Request Accomodation</div>
+         </div>
+      </div>
+   </div>
+      <div class="free-view-details"  style="padding: 0;">
+         <div class="BookaPartment bg-dark" style="color: white;text-align: initial;">
+            Book Apartment
+         </div>
+         <div class="close-quickview p05" style="color: white;">×</div>
+         <div class="p1">
+            <div class="row">
+             <div class="cost">
+                Cost per month : 1350 CAD
+             </div>
+            </div>
+            <div class="row requext-button">
+               <div class="btn btn-outline-dark">Book</div>
+            </div>
+         </div>
+         </div>
+
+      <div class="hidden-xs overlay-layer">&nbsp;</div>
+      <script >
+      	$('.close-quickview, .overlay-layer').click(function(){
+            $('.quick-view-details,.free-view-details, .overlay-layer, .ajax-loader').hide();
+          });
+
+      </script>
+      </body>
+</html>
+
+
+
+
+
+
+
+
+
+    <body>
+
+<div class="MainPage">
+   <div class="apartments content-wrapper">
+      <div class="container">
+         <div class="filter">
+            <div class="row">
+               <div class="results_near col-sm-4">
+                  <label>Showing results near</label>
+                  <select>
+                     <option>Dalhousie University</option>
+                     <option>SMU University</option>
+                     <option>Walmart-Mumfford</option>
+                     <option>Darthmouth</option>
+                     <option>Costco</option>
+                  </select>
+               </div>
+               <div class="type_of_room col-sm-4">
+                  <label>Type of Room</label>
+                  <select>
+                     <option>1 BHK</option>
+                     <option>2 BHK</option>
+                     <option>3 BHK</option>
+                     <option>Bungalow</option>
+                     <option>Single Room</option>
+                  </select>
+               </div>
+               <div class="cost_of_room col-sm-4">
+                  <label>Cost</label>
+                  <select>
+                     <option>Any</option>
+                     <option>Less than 500 CAD</option>
+                     <option>500 CAD-1000 CAD</option>
+                     <option>1000 CAD-2500 CAD</option>
+                     <option>Above 2500 CAD</option>
+                  </select>
+               </div>
+            </div>
+            <div class="row">
+               <div class="posession col-sm-4">
+                  <label>Posession</label>
+                  <select>
+                     <option>Immediate</option>
+                     <option>within 1 month </option>
+                     <option>1-2 month</option>
+                  </select>
+               </div>
+               <div class="sharing col-sm-4">
+                  <label>Sharing</label>
+                  <select>
+                     <option>
+                        Yeah
+                     </option>
+                     <option>
+                        No 
+                     </option>
+                  </select>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="showing-results adjustment">
+               <div class="border1 col-sm-2">
+                  &#160;
+               </div>
+               <div class="total-results col-sm-2">
+                  Showing 1135 results
+               </div>
+               <div class="border1 col-sm-8">
+                  &#160;
+               </div>
+            </div>
+         </div>
+         <div class="apartment-result">
+            <div class="row">
+               <div class="apartmnet-result-detail adjustment">
+                  <div class="apartment-image col-sm-3">
+                     <img src="../images/apartment8.jpg" alt="Apartment_Image"/>
+                  </div>
+                  <div class="apartment-description col-sm-6">
+                     <div class="apartment-name">
+                        Park Victoria Apartments
+                     </div>
+                     <div class="apartment-availabillity">
+                        Available:20
+                     </div>
+                     <div class="apartment-availabillity-type">
+                        <span class="new">New:5</span>
+                        <span class="new">Shared:15</span>
+                     </div>
+                  </div>
+                  <div class="Book-apartment col-sm-3">
+                     <div onclick="load_apartment_list()" class="btn btn-outline-dark">
+                        Book
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="apartmnet-result-detail adjustment">
+                  <div class="apartment-image col-sm-3">
+                     <img src="../images/apartment8.jpg" alt="Apartment_Image"/>
+                  </div>
+                  <div class="apartment-description col-sm-6">
+                     <div class="apartment-name">
+                        Park Victoria Apartments
+                     </div>
+                     <div class="apartment-availabillity">
+                        Available:20
+                     </div>
+                     <div class="apartment-availabillity-type">
+                        <span class="new">New:5</span>
+                        <span class="new">Shared:15</span>
+                     </div>
+                  </div>
+                  <div class="Book-apartment col-sm-3">
+                     <div onclick="load_apartment_list()" class="btn btn-outline-dark">
+                        Book
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="apartmnet-result-detail adjustment">
+                  <div class="apartment-image col-sm-3">
+                     <img src="../images/apartment8.jpg" alt="Apartment_Image"/>
+                  </div>
+                  <div class="apartment-description col-sm-6">
+                     <div class="apartment-name">
+                        Park Victoria Apartments
+                     </div>
+                     <div class="apartment-availabillity">
+                        Available:20
+                     </div>
+                     <div class="apartment-availabillity-type">
+                        <span class="new">New:5</span>
+                        <span class="new">Shared:15</span>
+                     </div>
+                  </div>
+                  <div class="Book-apartment col-sm-3">
+                     <div onclick="load_apartment_list()" class="btn btn-outline-dark">
+                        Book
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="apartmnet-result-detail adjustment">
+                  <div class="apartment-image col-sm-3">
+                     <img src="../images/apartment8.jpg" alt="Apartment_Image"/>
+                  </div>
+                  <div class="apartment-description col-sm-6">
+                     <div class="apartment-name">
+                        Park Victoria Apartments
+                     </div>
+                     <div class="apartment-availabillity">
+                        Available:20
+                     </div>
+                     <div class="apartment-availabillity-type">
+                        <span class="new">New:5</span>
+                        <span class="new">Shared:15</span>
+                     </div>
+                  </div>
+                  <div class="Book-apartment col-sm-3">
+                     <div onclick="load_apartment_list()" class="btn btn-outline-dark">
+                        Book
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="apartmnet-result-detail adjustment">
+                  <div class="apartment-image col-sm-3">
+                     <img src="../images/apartment8.jpg" alt="Apartment_Image"/>
+                  </div>
+                  <div class="apartment-description col-sm-6">
+                     <div class="apartment-name">
+                        Park Victoria Apartments
+                     </div>
+                     <div class="apartment-availabillity">
+                        Available:20
+                     </div>
+                     <div class="apartment-availabillity-type">
+                        <span class="new">New:5</span>
+                        <span class="new">Shared:15</span>
+                     </div>
+                  </div>
+                  <div class="Book-apartment col-sm-3">
+                     <div onclick="load_apartment_list()" class="btn btn-outline-dark">
+                        Book
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="apartmnet-result-detail adjustment">
+                  <div class="apartment-image col-sm-3">
+                     <img src="../images/apartment8.jpg" alt="Apartment_Image"/>
+                  </div>
+                  <div class="apartment-description col-sm-6">
+                     <div class="apartment-name">
+                        Park Victoria Apartments
+                     </div>
+                     <div class="apartment-availabillity">
+                        Available:20
+                     </div>
+                     <div class="apartment-availabillity-type">
+                        <span class="new">New:5</span>
+                        <span class="new">Shared:15</span>
+                     </div>
+                  </div>
+                  <div class="Book-apartment col-sm-3">
+                     <div onclick="load_apartment_list()" class="btn btn-outline-dark">
+                        Book
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="apartmnet-result-detail adjustment">
+                  <div class="apartment-image col-sm-3">
+                     <img src="../images/apartment8.jpg" alt="Apartment_Image"/>
+                  </div>
+                  <div class="apartment-description col-sm-6">
+                     <div class="apartment-name">
+                        Park Victoria Apartments
+                     </div>
+                     <div class="apartment-availabillity">
+                        Available:20
+                     </div>
+                     <div class="apartment-availabillity-type">
+                        <span class="new">New:5</span>
+                        <span class="new">Shared:15</span>
+                     </div>
+                  </div>
+                  <div class="Book-apartment col-sm-3">
+                     <div onclick="load_apartment_list()" class="btn btn-outline-dark">
+                        Book
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+</body>
+
+</html>

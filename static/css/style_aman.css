@@ -1,0 +1,209 @@
+header,footer{
+	background-color:yellow;
+	    padding: 8%;
+
+
+		}
+		.amenetiees {
+    text-align: center;
+    margin-top: 8em;
+}
+.Book-apartment-details .Book_Now {
+    margin-bottom: 4em;
+}
+		
+		li.parent-tabs {
+    cursor: pointer;
+    padding: 5px 10px;
+    display: inline;
+    background-color: #ebebeb;
+    font-size: 17px;
+    border: 1px solid #000;
+	border-radius:50px;
+}
+li.parent-tabs.active {
+    background-color: #fff;
+    font-weight: 700;
+
+}
+.tabs {
+	margin-bottom: 6em;
+    border: 1px solid;
+    padding-left: 2%;
+	padding-bottom:3%;
+}
+.tabs-child {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+}
+.tabs-child.active {
+    display: block;
+}
+.show-room img {
+    border-radius: 80px;
+    width: 100px;
+}
+.quick-view-details {
+    display: none;
+}
+.friends img {
+    width: 100px;
+    border-radius: 50px;
+}
+.cost {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+	    margin-top: 2em;
+
+}
+.requext-button{
+	text-align: center;
+        margin-top: 3em;
+		display: block;
+padding-bottom: 6%;
+
+}
+.Request_Accomodation {
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+ 
+ display: inline;
+}
+.friend1, .friend2 {
+    text-align: center;
+}
+.overlay-layer {
+    background-color: #000;
+    height: 100%;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    display: none;
+    left: 0;
+}
+.close-quickview {
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+}
+.friends {
+    margin-top: 3em;
+}
+.quick-view-details,.free-view-details {
+    top: 15%;
+    left: 15%;
+    background: #fff;
+    padding: 4%;
+    right: 15%;
+}
+.BookaPartment {
+    background-color: #000;
+    padding: 4%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+}
+.quick-view-details,.free-view-details {
+    position: fixed;
+    z-index: 100000;
+}
+		
+		.apartment-image img {
+    width: 200px;
+}
+.Recentratings img {
+    width: 70px;
+    border-radius: 90px;
+    margin-right: 18px;
+}
+.free-view-details {
+    display: none;
+}
+.Recentratings {
+    margin-top: 3em;
+ }
+ .apartment-image-pd img {
+    width: 100%;
+}
+.show-room {
+    margin-top: 2em;
+}	
+.apartment-name-pd {
+    font-size: 25px;
+    font-weight: bold;
+}
+.reviews-tabs-details {
+    text-align: center;
+    padding: 10%;
+}
+.overallreating span {
+    margin-left: 2em;
+    font-size: 17px;
+}
+.pdpage-content {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.apartmnet-result-detail {
+    display: block;
+    margin-top: 2em;
+}
+.apartment-description {
+    text-align: center;
+}
+.parking span, .heater span, .gym span {
+    margin-left: 3em;
+    text-transform: initial;
+}
+.Book_Now {
+    padding: 10px 40px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+.apartment-result {
+    margin-top: 3em;
+	    margin-bottom: 3em;
+
+}
+.apartments.content-wrapper {
+    margin-top: 3em;
+}
+.filter label {
+    min-width: 150px;
+	    margin-bottom: 30px;
+
+}
+.border1{
+	border-top:2px solid #000;
+	margin-top: 21px;
+}
+.filter select{
+	    padding: 4px;
+    border-radius: 11px;
+    background-color: #ebebeb;
+    color: #000;
+    font-weight: bold;
+}
+.adjustment{
+    width: 100%;
+    display: inherit;
+}

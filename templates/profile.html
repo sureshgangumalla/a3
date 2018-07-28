@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+         {% include './header.html' %}
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fullscreen Form Interface</title>
+		<meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
+		<meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+		<meta name="author" content="Codrops" />
+{#		<link rel="shortcut icon" href="../favicon.ico">#}
+		<link rel="stylesheet" type="text/css" href="../../static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/cs-skin-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/tectum.css" />
+		<script type="text/javascript" src="../../static/js/angular.min.js"></script>
+		<script type="text/javascript" src="../../static/js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="../../static/js/tectum.js"></script>
+	</head>
+	<body>
+<div>
+  <div class="p1">
+     <div class="row p4">
+        <div class="col-sm-3">
+		<div><img src="../../static/images/jpeg/user.jpeg" style="width:100%;" class="border" alt="user"></div>
+        </div>
+        <div class="col-sm-9">
+          <div id="studentName" class="h3">
+            <div class="row">
+              <div class="col-sm-8">
+		      <span id="firstname">{{ firstname }}</span>&#160;<span id="lastname">{{ lastname }}</span>
+              </div>
+{#              <div class="col-sm-4">#}
+{#		      <img title="Non-Vegetarian" class="profile-icons" src="../../static/images/svg/nv.svg" alt="Non-Vegetarian">#}
+{#		      <img title="Non-Smoker" class="profile-icons" src="../../static/images/svg/ns.svg" alt="Non-Smoker">#}
+{#		      <img title="Non-Alcoholic" class="profile-icons" src="../../static/images/svg/na.svg" alt="Non-Alcoholic">#}
+{#              </div>#}
+            </div>
+          <div id="courses" class="h6">{{ branch }}, {{ university }}</div>
+              <div id="phone" class="h6">{{ phone }}</div>
+{#          <div>#}
+{#            <span class="h6 txtgray pr1">Gender:</span>#}
+{#	    <img id="Gender" title="Male" class="gen" src="../../static/images/svg/m.svg" alt="Male">#}
+{#          </div>#}
+{#          <div>#}
+{#            <span class="h6 txtgray pr1">Nationality:</span>#}
+{#	    <img id="Nation" title="Canada" class="caf" src="../../static/images/svg/caf.svg" alt="Canada">#}
+{#          </div>#}
+{#          <div>#}
+{#            <span class="txtgray h6 pr1">Migration Date:</span>#}
+{#            <span class="h6">22/12/2018</span>#}
+{#          </div>#}
+{#          <div class="pt1">#}
+{#		  <img title="Facebook" class="social-icons" src="../../static/images/svg/facebook.svg" alt="Facebook">#}
+{#		  <img title="WhatsApp" class="social-icons" src="../../static/images/svg/whatsapp.svg" alt="WhatsApp">#}
+{#		  <img title="email" class="social-icons" src="../../static/images/svg/email.svg" alt="email">#}
+{#          </div>#}
+        </div>
+      </div> 
+  </div>
+  <div class="emptyimage">
+    <button type="button" class="btn btn-success" style="width:10em;" onclick="window.location.href='{{ url_for( 'editprofile') }}';">Edit</button>
+  </div>
+</div>
+</div>
+</body>
+</html>

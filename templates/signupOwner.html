@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Fullscreen Form Interface</title>
+		<meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
+		<meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+		<meta name="author" content="Codrops" />
+{#		<link rel="shortcut icon" href="../favicon.ico">#}
+		<link rel="stylesheet" type="text/css" href="../../static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/cs-skin-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/tectum.css" />
+{#		<script src="../../static/js/signup.js"></script>#}
+		<script src="../../static/js/modernizr.custom.js"></script>
+
+	</head>
+
+    <body>
+		<div class="container" ng-app="">
+
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<div>
+						<img src="../../static/images/svg/font.svg" style="width:4em;" alt="Tectum">
+					</div>
+
+				</div>
+				<form method="post" id="ownerRegForm" name="ownerRegForm" class="fs-form fs-form-full" autocomplete="off">
+					<ol class="fs-fields">
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="name">Owner's Email:</label>
+							<input class="fs-anim-lower" id="owner_email" name="owner_email" type="email" ng-model="email" placeholder="xyz@abc.com"/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="password">Password:</label>
+							<input class="fs-anim-lower" id="owner_password" name="owner_password" type="password"/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="cpassword">Confirm Password:</label>
+							<input class="fs-anim-lower" id="owner_cpassword" name="owner_cpassword" type="password"/>
+						</li>
+					</ol><!-- /fs-fields -->
+					<button class="fs-submit" type="submit">Get Started</button>
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+		</div><!-- /container -->
+		<script src="../../static/js/classie.js"></script>
+		<script src="../../static/js/selectFx.js"></script>
+		<script src="../../static/js/fullscreenForm.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+						}
+					});
+				} );
+
+				new FForm( formWrap, {
+					onReview : function() {
+						classie.add( document.body, 'overview' ); // for demo purposes only
+					}
+				} );
+			})();
+		</script>
+    <script src="../../static/js/signup.js"></script>
+	</body>
+</html>

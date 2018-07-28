@@ -1,0 +1,69 @@
+{#{% csrf_token %}#}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../static/css/tectum.css"/>
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css"/>
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../../static/js/bootstrap.min.js"></script>
+    <script src="../../static/js/tectum.js"></script>
+    <script src="../../static/js/angular.min.js"></script>
+    <script type="text/javascript" src="../../static/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../static/css/style_aman.css">
+
+    <title>Tectum&#x2122;</title>
+  </head>
+  <body>
+	<script src="../../static/js/geolocation.js"></script>
+  	<nav class="navbar navbar-dark bg-dark p1">
+  		<a class="navbar-brand" href="#" onclick="loadhome()">
+			<img src="../../static/images/svg/font.svg" width="30" height="30" class="d-inline-block align-top" alt="Tectum">
+    		<span class="texttitle" onclick="window.location.href='{{ url_for( 'homeOwner') }}';">ectum</span>
+  		</a>
+  		<div class="navbar-nav-scroll">
+		    <ul class="navbar-nav bd-navbar-nav flex-row">
+		      <li class="nav-item ptr locstyle">
+		      	<a class="ptr">
+				<img src="../../static/images/svg/CA.svg" class="locwidth" id="localeflag" alt="Flag">
+  					<span id='local_name' class="text-white vm texttitle">Canada</span>
+  				</a>
+		      </li>
+{#		      <li class="nav-item ptr pr1" onclick="loadhome()" title="Home">#}
+{#			      <a class="nav-link active adjwidth"><img class="imagetitle" src="../../static/images/svg/home_icon.svg" alt="Home"><span class="texttitle">Home</span></a>#}
+{#		      </li>#}
+		      <li class="nav-item ptr pr1 adjwidth" title="Apartment" >
+			      <a class="nav-link"><img class="imagetitle" src="../../static/images/svg/city.svg" alt="Apartment"><span class="texttitle" onclick="window.location.href='{{ url_for( 'addApartment') }}';">Add Apartment</span></a>
+		      </li>
+		      <li class="nav-item ptr pr1 adjwidth" title="Feedback" onclick="loadfeedback()">
+			      <a class="nav-link"><img class="imagetitle" src="../../static/images/svg/feedback.svg" alt="Feedback"><span class="texttitle">Feedback</span></a>
+		      </li>
+		      <li class="nav-item ptr dropdown">
+			      <img src="../../static/images/svg/pf.svg" style="width:2.5em;" class="rounded-circle border dropdown-toggle"  id="navDropDownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" alt="Profile Picture">
+		        <!--Using inline style to override bootstrap default-->
+		        <div class="dropdown-menu" aria-labelledby="navDropDownLink" style="position: absolute;top: 3.2em;left: -7em;">
+            		<a class="dropdown-item" href="#">
+                        <span class="h6" onclick="window.location.href='{{ url_for( 'index') }}';">Logout</span>
+                    </a>
+        		</div>
+		      </li>	
+		    </ul>
+  		</div>
+  		
+	</nav>
+	<!--End of Header-->
+	<div id="message_panel" style="display: none;">
+		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  			<strong><span id="highlight-text">Holy guacamole!</span></strong><span id="warning-message">You should check in on some of those fields below.</span>
+ 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    			<span aria-hidden="true">&times;</span>
+  			</button>
+		</div>
+	</div>
+	<div id="container-div">
+		<script>load_profile_edit()</script>
+	</div>
+
+  </body>
+</html>

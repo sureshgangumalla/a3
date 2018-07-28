@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% include './headerOwner.html' %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fullscreen Form Interface</title>
+    <meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
+    <meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+    <meta name="author" content="Codrops" />
+    {#		<link rel="shortcut icon" href="../favicon.ico">#}
+    <link rel="stylesheet" type="text/css" href="../../static/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/cs-select.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/cs-skin-boxes.css" />
+    <link rel="stylesheet" type="text/css" href="../../static/css/tectum.css" />
+    <script type="text/javascript" src="../../static/js/angular.min.js"></script>
+    <script type="text/javascript" src="../../static/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="../../static/js/tectum.js"></script>
+    <style>
+        .add-more-product-button{
+            margin-right: 40px;
+            padding: 5px 30px 5px 30px;
+            float: left;
+        }
+        .add_details_section{
+
+            width: 850px !important;
+            margin-left: 150px;
+
+
+        }
+        #banner_form, #appartment_form {
+
+            margin-left: 100px;
+        }
+        .product-submit-button{
+
+            margin-right: 40px;
+            padding: 5px 40px 5px 40px;
+            margin-left: 250px;
+        }
+
+    </style>
+
+    <title>Apartment List</title>
+</head>
+
+<body>
+
+
+
+
+<div class="MainPage">
+    <div class="apartment-details content-wrapper">
+        <div class="container">
+
+            {% for apartment in apartments %}
+
+                <div class="tabs">
+
+                        <div class="panel panel-default add_details_section">
+
+                            <div class="panel-body">
+
+                                <div class="form-horizontal">
+
+
+
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" style="font-weight:bold; color: #eea236">Appartment Name:</label>
+                                        <div class="col-lg-5">
+                                            <span class="texttitle"> {{ apartment[1] }} </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" style="font-weight:bold; color: #eea236"> Location</label>
+                                        <div class="col-lg-5">
+                                            <span class="texttitle"> {{ apartment[2] }} </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" style="font-weight:bold; color: #eea236">Apartment Type:</label>
+                                        <div class="col-lg-5">
+                                            <span class="texttitle"> {{ apartment[3] }} </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" style="font-weight:bold; color: #eea236">Owner Contact:</label>
+                                        <div class="col-lg-5">
+                                            <span class="texttitle"> {{ apartment[4] }} </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-lg-3 control-label" style="font-weight:bold; color: #eea236">Apartment Description:</label>
+                                        <div class="col-lg-5">
+                                            <span class="texttitle"> {{ apartment[5] }} </span>
+                                        </div>
+                                    </div>
+
+                                    {#                                <div class="form-group">#}
+                                    {#                                    <label class="col-lg-3 control-label">Appartment Image </label>#}
+                                    {#                                    <div class="col-lg-5">#}
+                                    {#                                        <span class="texttitle"> {{ apartment[7] }} </span>#}
+                                    {#                                    </div>#}
+                                    {#                                </div>#}
+
+                                    <br>
+
+                                    <button value="save">Edit</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

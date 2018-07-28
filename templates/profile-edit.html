@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+         {% include './header.html' %}
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Fullscreen Form Interface</title>
+		<meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
+		<meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+		<meta name="author" content="Codrops" />
+{#		<link rel="shortcut icon" href="../favicon.ico">#}
+		<link rel="stylesheet" type="text/css" href="../../static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/cs-skin-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/css/tectum.css" />
+		<script type="text/javascript" src="../../static/js/angular.min.js"></script>
+		<script type="text/javascript" src="../../static/js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="../../static/js/tectum.js"></script>
+	</head>
+	<body>
+		<div id="profileparent" ng-app="">
+    <form method="post" id="editprofileForm" action="" name="editprofileForm" autocomplete="off">
+        <p class="p1 h4 emptyimage">Profile</p>
+        <div class="row p4" style="padding-top: 0;margin-left: 0;margin-right: 0;">
+            <div class="col-sm-6 emptyimage">
+                <div class="centerimage">
+                    <img src="../../static/images/jpeg/user.jpeg" style="width:50%;" class="border" alt="User" />
+                </div>
+                <div class="p1">
+                    <input type="file" name="profileimage"/>
+                </div>
+{#                <div class="emptyimage p1">#}
+{#                    <img title="Non-Vegetarian" class="profile-icons" id="meal" onclick="toggleMealSelection()" src="../../static/images/svg/nv.svg" alt="Non-Vegetarian">#}
+{#                    <img title="Non-Smoker" class="profile-icons" id="smoke" onclick="toggleSmokeSelection()" src="../../static/images/svg/ns.svg" alt="Non-Smoker">#}
+{#                    <img title="Non-Alcoholic" class="profile-icons" id="alcohol" onclick="toggleAlcoholSelection()" src="../../static/images/svg/na.svg" alt="Non-Alcoholic">#}
+{#                </div>#}
+{#                <div class="emptyimage p1">#}
+{#                    <button type="button" class="btn btn-success" style="width: 10em;background-color:  #3B5998;" onclick="load_profile()"><img style="width: 2em;float: left;" src="../../static/images/svg/fb.svg" alt="Facebook"><span class="h6 vm">Facebook</span></button>#}
+{#                    <button type="button" class="btn btn-success" style="width: 10em;background-color:  #dd4b39;" onclick="load_profile()"><img style="width: 2em;float: left;" src="../../static/images/svg/gmail.svg" alt="Google"><span class="h6 vm">Google</span></button>#}
+{#                </div>#}
+            </div>
+            <div class="col-sm-4">
+                <div class="p05">
+                    <label for="firstname" class="txtgray">First Name</label>
+                   <input name="firstname" ng-required="true" type="text" id="firstname" class="form-control" value="{{ firstname }}">
+                    <span class="txtgray" style="font-size: 0.6em;">Nice to meet you {{firstname}}!</span>
+                    <span style="color: red;display: none;" id="errorfn">aaaa</span>
+                </div>
+                <div class="p05">
+                    <label for="lastname" class="txtgray">Last Name</label>
+                    <input name="lastname" ng-required="true" type="text" id="lastname" class="form-control" value="{{ lastname }}">
+                    <span style="color: red;display: none;" id="errorln">aaaa</span>
+                </div>
+                <div class="p05">
+                    <label for="gender" class="txtgray">Gender</label>
+                    <select class="form-control" id="gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="p05">
+                    <label for="phone" class="txtgray">Phone Number</label>
+                    <input name="phone" type="text" id="phone" ng-required="true" class="form-control" value="{{ phone }}">
+                    <span style="color: red;display: none;" id="errorph">aaaa</span>
+                </div>
+                <div class="p05">
+                    <label for="university" class="txtgray">University</label>
+                    <input name="university" type="text" id="university" ng-required="true" class="form-control" value="{{ university }}">
+                    <span style="color: red;display: none;" id="errorun">aaaa</span>
+                </div>
+                <div class="p05">
+                    <label for="branch" class="txtgray">Branch</label>
+                    <input name="branch" type="text" id="branch" ng-required="true" class="form-control" value="{{ branch }}">
+                    <span style="color: red;display: none;" id="errorbr">aaaa</span>
+                </div>
+            </div>
+        </div>
+        <div class="emptyimage p1">
+            <button  type="submit" class="btn btn-success" style="width: 10em;">Save</button>
+        </div>
+    </form>
+</div>
+	</body>
+</html>
