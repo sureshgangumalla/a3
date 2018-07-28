@@ -33,30 +33,30 @@
 					<ol class="fs-fields">
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="name">Name:</label>
-							<input class="fs-anim-lower" id="name" name="name" type="text" ng-model="name" placeholder="Aman Kumar"/>
+							<input class="fs-anim-lower" ng-required="true" id="name" name="name" type="text" ng-model="name" placeholder="Aman Kumar"/>
 							<span class="" style="font-size: 0.5em;color: #27ae60">Nice meeting you {{name}}!</span>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="email" data-info="We won't send you spam, we promise...">email:</label>
-							<input class="fs-anim-lower" id="email" name="email" type="email" ng-model="email" placeholder="viz@dal.ca" />
+							<input class="fs-anim-lower" ng-required="true" id="email" name="email" type="email" ng-model="email" placeholder="viz@dal.ca" />
 							<span class="" style="font-size: 0.5em;color: #27ae60">We should email at {{email}}.Great!</span>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="password">Password:</label>
-							<input class="fs-anim-lower" id="password" name="password" type="password"/>
+							<input class="fs-anim-lower" ng-required="true" id="password" name="password" type="password"/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="cpassword">Confirm Password:</label>
-							<input class="fs-anim-lower" id="cpassword" name="cpassword" type="password"/>
+							<input class="fs-anim-lower" ng-required="true" id="cpassword" name="cpassword" type="password"/>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="dob">Date Of Birth:</label>
-							<input class="fs-anim-lower" id="dob" name="dob" type="text" ng-model="dob" placeholder="DD/MM/YYYY" />
+							<input class="fs-anim-lower" ng-required="true" id="dob" name="dob" type="text" ng-model="dob" placeholder="DD/MM/YYYY" />
 							<span class="" style="font-size: 0.5em;color: #27ae60">We will wish you on {{dob}}!</span>
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="country">Country:</label>
-							<input class="fs-anim-lower" id="country" name="country" type="text" ng-model="country" placeholder="Canada" />
+							<input class="fs-anim-lower" ng-required="true" id="country" name="country" type="text" ng-model="country" placeholder="Canada" />
 							<span class="" style="font-size: 0.5em;color: #27ae60">You are from {{country}}? Wow!</span>
 						</li>
 					</ol><!-- /fs-fields -->
