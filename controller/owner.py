@@ -27,11 +27,12 @@ class Owner:
             if self.owner_password == self.owner_cpassword:
                 cur.execute("INSERT INTO owner_registration(owner_email,owner_password) VALUES(%s,%s)",
                             (self.owner_email, self.owner_password))
+                cnx.commit()
                 return 2
             else:
                 return 3
 
-            cnx.commit()
+            
             cnx.close()
         except Exception as e:
             flash("Error while registering a new owner %s",)
