@@ -66,6 +66,7 @@ class User:
                     if self.password == row[0]:
                         print('User password is correct')
                         session['email'] = self.email
+                        cnx.close()
                         return 1
                     else:
                         return 2
@@ -75,10 +76,6 @@ class User:
         except Exception as e:
             # logging.error(e, "Error while adding a executing add_user()")
             flash("Error while validating the owner %s")
-
-        finally:
-            cnx.close()
-            flash("Database connection closed")
 
     def add_user(self):
         cnx = Db().data_connect()
